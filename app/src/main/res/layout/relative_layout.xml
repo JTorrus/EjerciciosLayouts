@@ -1,11 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.alumne.ejercicio_layouts_jtorrus.MainActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/titleRelative"
+        android:padding="@dimen/default_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_for_relative"
+        android:textSize="@dimen/title_size"
+        android:layout_centerHorizontal="true"/>
 
+    <TextView
+        android:id="@+id/tvName"
+        android:padding="@dimen/default_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_name"
+        android:layout_below="@id/titleRelative"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/titleRelative"
+        android:layout_width="@dimen/et_static_width"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvFirst"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:layout_width="@dimen/size_tvfirst_relative"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_first"
+        android:layout_below="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:layout_width="@dimen/size_tvsecond_relative"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_second"
+        android:layout_toEndOf="@id/tvFirst"
+        android:layout_below="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvThird"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:layout_width="@dimen/size_tvthird_relative"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_third"
+        android:layout_toEndOf="@id/tvSecond"
+        android:layout_below="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="@string/tv_information"
+        android:layout_below="@id/tvFirst"/>
+
+    <EditText
+        android:id="@+id/etBig"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvInfo"/>
+    
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBig"
+        android:text="@string/btn_previous"/>
+    
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_below="@id/etBig"
+        android:padding="@dimen/default_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btn_next"/>
+</RelativeLayout>

@@ -4,4 +4,7 @@
     <dimen name="padding_name">30dp</dimen>
     <dimen name="default_padding">16dp</dimen>
     <dimen name="et_static_width">120dp</dimen>
+    <dimen name="size_tvfirst_relative">100dp</dimen>
+    <dimen name="size_tvsecond_relative">180dp</dimen>
+    <dimen name="size_tvthird_relative">100dp</dimen>
 </resources>
