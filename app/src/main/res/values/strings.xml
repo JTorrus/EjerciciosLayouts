@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio_Layouts_JTorrus</string>
+    <string name="title_for_lineal">Linear Layout</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_first">First</string>
+    <string name="tv_third">Third</string>
+    <string name="tv_second">Second</string>
+    <string name="tv_information">Information</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+</resources>

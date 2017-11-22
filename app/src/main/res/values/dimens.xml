@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="padding_name">30dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="et_static_width">120dp</dimen>
+</resources>
