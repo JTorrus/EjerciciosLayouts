@@ -30,4 +30,70 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/titleCons"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvFirstConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_first"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintTop_toBottomOf="@id/nameCons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+       />
+
+    <TextView
+        android:id="@+id/tvSecondConst"
+        android:layout_width="@dimen/no_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="@string/tv_second"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/tvThirdConst"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstConst"
+        app:layout_constraintTop_toBottomOf="@id/nameCons" />
+
+    <TextView
+        android:id="@+id/tvThirdConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:text="@string/tv_third"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameCons" />
+
+    <TextView
+        android:id="@+id/tvInfoConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_information"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstConst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <EditText
+        android:id="@+id/etBig"
+        android:layout_width="@dimen/no_width"
+        android:layout_height="@dimen/no_height"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextConst"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfoConst" />
+
+    <Button
+        android:id="@+id/btnPreviousConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_previous"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btnNextConst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>

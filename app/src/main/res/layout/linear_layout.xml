@@ -24,7 +24,7 @@
             android:text="@string/tv_name" />
         
         <Space
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/no_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 

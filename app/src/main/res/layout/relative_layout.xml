@@ -67,7 +67,7 @@
     <EditText
         android:id="@+id/etBig"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/et_relative_height"
         android:layout_below="@id/tvInfo"/>
     
     <Button
